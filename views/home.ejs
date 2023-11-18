@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Mimfix</title>
+    <style>
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.75rem;
+        }
+    </style>
+    <title>MimFix</title>
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="/images/mimfix.png" height="30"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +27,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="/about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
@@ -50,47 +58,48 @@
           </div>
         </div>
       </div>
-      
-      <div class="container px-4 py-5" id="featured-3">
+    
+      <div class="container px-4 py-5" id="hanging-icons">
         <h2 class="pb-2 border-bottom">Why choose us?</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      
-          <div class="feature col">
-            <div class="feature-icon bg-primary bg-gradient">
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="/images/briefcase.svg" alt="briefcase" height="30">
             </div>
-            <h2>Professional</h2>
-            <p>Our team of professional technicians are trained to prioritize efficiency, organization, and attention to detail. We understand that your possessions are more than just objects - they are a reflection of your life, memories, and experiences. That's why we take extra care to ensure that everything is repaired and restored with the utmost care and attention.</p>
-            <a href="#" class="icon-link">
-              Get a quote
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-            </a>
+            <div>
+              <h2>Professional</h2>
+              <p>Our team of professional technicians are trained to prioritize efficiency, organization, and attention to detail. We understand that your possessions are more than just objects - they are a reflection of your life, memories, and experiences. That's why we take extra care to ensure that everything is repaired and restored with the utmost care and attention.</p>
+               <a href="#" class="btn btn-dark">
+               Get a quote
+              </a>
+            </div>
           </div>
-          <div class="feature col">
-            <div class="feature-icon bg-primary bg-gradient">
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="/images/chat-square-heart.svg" alt="chat-square-heart" height="30">
             </div>
-            <h2>Personal Touch</h2>
-            <p>At our core, we believe that getting your device repaired should be an exciting and positive experience, not a stressful one. By providing exceptional repair services, we hope to revolutionize the way people think about repairs and provide a better, more personalized experien.</p>
-            <a href="#" class="icon-link">
-              Get a quote
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-            </a>
-          </div>
-          <div class="feature col">
-            <div class="feature-icon bg-primary bg-gradient">
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
-            </div>
-            <h2>Countrywide</h2>
-            <p>We offer a range of services to suit your individual needs, whether you're locally based or across the country. Our team can handle everything from repairing and software maintanance, so you can focus on working on your devices. And with our transparent pricing and no hidden fees, you can trust that you're getting a fair and competitive rate for our services.</p>
-            <a href="#" class="icon-link">
+            <div>
+              <h2>Personal Touch</h2>
+              <p>At our core, we believe that getting your device repaired should be an exciting and positive experience, not a stressful one. By providing exceptional repair services, we hope to revolutionize the way people think about repairs and provide a better, more personalized experien.</p>
+            <a href="#" class="btn btn-dark">
                 Get a quote
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-            </a>
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="/images/car-front.svg" alt="car-front" height="30">
+            </div>
+            <div>
+              <h2>Pick and Drop</h2>
+              <p>At our core, we believe that getting your device repaired should be an exciting and positive experience, not a stressful one. By providing exceptional repair services, we hope to revolutionize the way people think about repairs and provide a better, more personalized experien.</p>
+            <a href="#" class="btn btn-dark">
+                Contact us
+              </a>
+            </div>
           </div>
         </div>
       </div>
-
     <div style="text-align: center;"> 
     <h1 style="font-weight: bold; font-size: 50px; color: rgb(0, 0, 10);">Supported Brands</h1>
     <img src="/images/image1.png" alt=""  width="700vh" height="400vh" style="display: block; margin: auto;">
