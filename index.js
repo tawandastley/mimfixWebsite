@@ -16,6 +16,10 @@ app.get("/about", (req, res) => {
     res.render("about");
 });
 
+app.get("/FAQ", (req, res) => {
+    res.render("FAQ.ejs");
+});
+
 app.get("/pricing", (req, res) => {
     res.render("cover");
 })
