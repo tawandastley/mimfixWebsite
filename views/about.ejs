@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>About</title>
+    <title>About Us</title>
 </head>
 <body>
   <%- include('partials/navBar.ejs') %>
-<div class="container">
+<div class="container-md">
+<p class="display-6 fw-bold">About Us</p>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -17,26 +18,33 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/images/image1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+            <img src="/images/office2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h5>Our NMU office</h5>
+              <p>Pop in for repairs.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/images/image3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <img src="/images/cellphone.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/images/image2.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+            <img src="/images/mboard.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>Motherboard repairs</h5>
+              <p>We fix motherboard related problems.</p>
             </div>
           </div>
+          <!-- <div class="carousel-item">
+            <img src="/images/image1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>We support all brands</h5>
+              <p>eveen the ones not listed on the image.</p>
+            </div>
+          </div> -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -47,7 +55,52 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
- </div>        
+    </div>
+    
+    <!-- why choose us section -->
+
+ <div class="container px-4 py-5" id="hanging-icons">
+  <h2  class="display-5 fw-bold">Why choose us?</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="col d-flex align-items-start">
+      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <img src="/images/briefcase.svg" alt="briefcase" height="30">
+      </div>
+      <div>
+        <h2>Professional</h2>
+        <p>Our team of professional technicians are trained to prioritize efficiency, organization, and attention to detail. We understand that your possessions are more than just objects - they are a reflection of your life, memories, and experiences. That's why we take extra care to ensure that everything is repaired and restored with the utmost care and attention.</p>
+         <a href="#" class="btn btn-dark">
+         Get a quote
+        </a>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <img src="/images/chat-square-heart.svg" alt="chat-square-heart" height="30">
+      </div>
+      <div>
+        <h2>Personal Touch</h2>
+        <p>At our core, we believe that getting your device repaired should be an exciting and positive experience, not a stressful one. By providing exceptional repair services, we hope to revolutionize the way people think about repairs and provide a better, more personalized experien.</p>
+      <a href="#" class="btn btn-dark">
+          Get a quote
+        </a>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <img src="/images/car-front.svg" alt="car-front" height="30">
+      </div>
+      <div>
+        <h2>Pick and Drop</h2>
+        <p>At our core, we believe that getting your device repaired should be an exciting and positive experience, not a stressful one. By providing exceptional repair services, we hope to revolutionize the way people think about repairs and provide a better, more personalized experien.</p>
+      <a href="#" class="btn btn-dark">
+          Contact us
+        </a>
+      </div>
+    </div>
+  </div>
+</div>      
+
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
