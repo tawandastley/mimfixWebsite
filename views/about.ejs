@@ -4,59 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     <title>About Us</title>
 </head>
 <body>
   <%- include('partials/navBar.ejs') %>
-<div class="container-md">
-<p class="display-6 fw-bold">About Us</p>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  
+ 
+  <div class="container">
+    <p class="display-6 fw-bold">Social Media</p>
+  <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+    <div class="col d-flex flex-column align-items-start gap-2">
+      <h2 class="fw-bold text-body-emphasis">these are our official Social media handles</h2>
+      <p class="text-body-secondary">Feel free to send us a DM or follow us on social media</p>
+    
+    </div>
+
+    <div class="col">
+      <div class="row row-cols-1 row-cols-sm-2 g-4">
+        <div class="col d-flex flex-column gap-2">
+          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <img src="/images/facebook.svg" alt="facebook">
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis">Facebook</h4>
+          <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/images/office2.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption  d-md-block">
-              <h5>Our NMU office</h5>
-              <p>Pop in for repairs.</p>
-            </div>
+
+        <div class="col d-flex flex-column gap-2">
+          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <img src="/images/twitter.svg" alt="twitter" height="30">
           </div>
-          <div class="carousel-item">
-            <img src="/images/cellphone.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/images/mboard.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h5>Motherboard repairs</h5>
-              <p>We fix motherboard related problems.</p>
-            </div>
-          </div>
-          <!-- <div class="carousel-item">
-            <img src="/images/image1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h5>We support all brands</h5>
-              <p>eveen the ones not listed on the image.</p>
-            </div>
-          </div> -->
+          <h4 class="fw-semibold mb-0 text-body-emphasis">Twitter</h4>
+          <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+        <div class="col d-flex flex-column gap-2">
+          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <img src="/images/instagram.svg" alt="instagram" height="30">
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis">Instagram</h4>
+          <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+
+        <!-- <div class="col d-flex flex-column gap-2">
+          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#table"></use>
+            </svg>
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+          <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+        </div> -->
       </div>
     </div>
-    
+  </div> 
+</div> 
     <!-- why choose us section -->
 
  <div class="container px-4 py-5" id="hanging-icons">
@@ -69,7 +74,7 @@
       <div>
         <h2>Professional</h2>
         <p>Our team of professional technicians are trained to prioritize efficiency, organization, and attention to detail. We understand that your possessions are more than just objects - they are a reflection of your life, memories, and experiences. That's why we take extra care to ensure that everything is repaired and restored with the utmost care and attention.</p>
-         <a href="#" class="btn btn-dark">
+         <a href="/quote" class="btn btn-outline-dark">
          Get a quote
         </a>
       </div>
@@ -81,7 +86,7 @@
       <div>
         <h2>Personal Touch</h2>
         <p>At our core, we believe that getting your device repaired should be an exciting and positive experience, not a stressful one. By providing exceptional repair services, we hope to revolutionize the way people think about repairs and provide a better, more personalized experien.</p>
-      <a href="#" class="btn btn-dark">
+      <a href="/quote"class="btn btn-outline-dark">
           Get a quote
         </a>
       </div>
@@ -93,8 +98,8 @@
       <div>
         <h2>Pick and Drop</h2>
         <p>At our core, we believe that getting your device repaired should be an exciting and positive experience, not a stressful one. By providing exceptional repair services, we hope to revolutionize the way people think about repairs and provide a better, more personalized experien.</p>
-      <a href="#" class="btn btn-dark">
-          Contact us
+      <a href="/quote"class="btn btn-outline-dark">
+         Get a quote
         </a>
       </div>
     </div>

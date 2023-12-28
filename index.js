@@ -9,7 +9,7 @@ app.use(express.static("public"));
 app.set('view engine', 'ejs');
 
 app.get("/", (req, res) => {
-    res.render("home.ejs");
+    res.render("home");
 });
 
 app.get("/about", (req, res) => {
@@ -17,11 +17,18 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/FAQ", (req, res) => {
-    res.render("FAQ.ejs");
+    res.render("FAQ");
 });
 app.get("/quote", (req, res) => {
-    res.render("contactUs.ejs");
-})
+    res.render("quote");
+});
+app.get("/pick", (req, res) => {
+    res.render("comingSoonPage");
+});
+app.get("/enquire", (req, res) => {
+    res.render("comingSoonPage");
+});
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
